@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عملیات حال خوب 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div id="hearts"></div></div>
+
+<!-- Intro: envelope -->
+<section id="intro" class="screen" aria-label="نامه">
+  <div class="intro-wrap">
+    <button id="envelope" class="envelope" type="button" aria-label="باز کردن نامه">
+      <span class="env-back"></span>
+      <span class="letter"><span class="letter-text">یه مأموریت کوچولو برای یه آدم خاص آماده کردم... 💗<br>حاضری شروع کنیم؟</span></span>
+      <span class="env-front">
+        <i class="pk-l"></i><i class="pk-r"></i><i class="pk-b"></i>
+      </span>
+      <span class="flap"></span>
+      <span class="seal">💗</span>
+    </button>
+    <p class="intro-title">یه نامه کوچولو برات دارم 💌</p>
+    <p class="intro-hint">برای باز کردن نامه روی پاکت بزن</p>
+  </div>
+</section>
+
+<!-- Main app -->
+<main id="app" class="screen" hidden>
+  <article class="card" id="card">
+    <div class="tag">🎀 عملیات حال خوب</div>
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="1"><span id="bar"></span></div>
+    <div class="counter" id="counter"></div>
+    <div class="step" id="step">
+      <div class="emoji" id="emoji"></div>
+      <p class="flash" id="flash" aria-live="polite"></p>
+      <h1 id="title"></h1>
+      <p class="desc" id="desc"></p>
+      <div id="extra"></div>
+      <div class="options" id="options" role="group"></div>
+      <p class="note" id="note"></p>
+    </div>
+    <button id="next" class="btn" type="button"></button>
+  </article>
+</main>
+
+<!-- Final -->
+<section id="final" class="screen" hidden aria-live="polite">
+  <article class="card final-card">
+    <div class="emoji">🎁</div>
+    <div id="finalMsg" class="final-msg"></div>
+    <button id="restart" class="btn" type="button">از اول شروع کنیم ↻</button>
+  </article>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
